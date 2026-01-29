@@ -21,18 +21,24 @@ body {
 
 .stats-container {
     display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 
-.stats-card {
-    background-color: #a8b0bc;
-    border-radius: 7px;
-    padding: 1%;
-    margin: 1%;
-    width: 100%;
-    text-align: center;
+.stats-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0 30px lightblue;
 }
 
-#num-contributions, #total-raised, #num-games {
+.stats-card:hover {
+    cursor: pointer;
+    box-shadow: 0 0 20px lightblue;
+}
+
+#num-contributions,
+#total-raised,
+#num-games {
     font-size: 50px;
 }
 
