@@ -185,15 +185,15 @@ document.addEventListener("DOMContentLoaded", function() {
     firstGameContainer.innerHTML = `
         <h3 style="text-align: center;">🥇 Top Funded Game</h3>
         <img class="game-img" src="${firstGame.img}" alt="${firstGame.name}" style="display: block; margin: 0 auto;" />
-        <p style="text-align: center;">${firstGame.name}</p>
-        <p style="text-align: center;">$${firstGame.pledged.toLocaleString()}</p>
+        <p style="text-align: center; font-weight: bold;">${firstGame.name}</p>
+        <p style="text-align: center; font-weight: bold;">$${firstGame.pledged.toLocaleString()}</p>
     `;
 
     // do the same for the runner up item with the image, name, and pledged amount
     secondGameContainer.innerHTML = `
         <h3 style="text-align: center;">🥈 Runner Up</h3>
         <img class="game-img" src="${secondGame.img}" alt="${secondGame.name}" style="display: block; margin: 0 auto;" />
-        <p style="text-align: center;">${secondGame.name}</p>
-        <p style="text-align: center;">$${secondGame.pledged.toLocaleString()}</p>
+        <p style="text-align: center; font-weight: bold;">${secondGame.name}</p>
+        <p style="text-align: center; font-weight: bold;">$${secondGame.pledged.toLocaleString()}</p>
     `;
 });
